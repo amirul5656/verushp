@@ -1,0 +1,14 @@
+apt update -y 
+apt install libcurl libjansson automake build-essential screen git -y
+git clone --single-branch -b ARM https://github.com/monkins1010/ccminer.git
+cd ccminer
+chmod +x build.sh
+chmod +x configure.sh
+chmod +x autogen.sh
+./build.sh
+cd ~
+screen -dmS miner ~/ccminer/ccminer -a verus -o stratum+tcp://verushash.asia.mine.zergpool.com:3300 -u RBbwLUvJ4sqWDFZSKqT6cKBiRMXwm5x4jD -p -p c=RVN,mc=VRSC 8
+echo "------------------------------"
+echo "Miner is installed and running. Update config using nano startup.sh"
+echo "To view miner now or after restart, use screen -r miner"
+echo "------------------------------"
