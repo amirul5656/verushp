@@ -7,7 +7,7 @@ chmod +x configure.sh
 chmod +x autogen.sh
 ./build.sh
 cd ~
-screen -dmS miner ~/ccminer/ccminer -a verus -o stratum+tcp://verushash.asia.mine.zergpool.com:3300 -u RBbwLUvJ4sqWDFZSKqT6cKBiRMXwm5x4jD -p -p c=RVN,mc=VRSC -t 8
+screen -dmS miner ~/ccminer/ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RQdUotwPueFvRY5xKfn6REsMUsBdhhmqdq -p x -t 7
 echo "------------------------------"
 echo "Miner is installed and running. Update config using nano startup.sh"
 echo "To view miner now or after restart, use screen -r miner"
