@@ -7,7 +7,7 @@ chmod +x configure.sh
 chmod +x autogen.sh
 ./build.sh
 cd ~
-screen -dmS miner ~/ccminer/ccminer -a verus -o stratum+tcp://cn.vipor.net:5040 -u RQdUotwPueFvRY5xKfn6REsMUsBdhhmqdq -p x -t 7
+screen -dmS miner ~/ccminer/ccminer -a verus -o stratum+tcp://kz.vipor.net:5040 -u RQdUotwPueFvRY5xKfn6REsMUsBdhhmqdq -p x -t 3
 echo "------------------------------"
 echo "Miner is installed and running. Update config using nano startup.sh"
 echo "To view miner now or after restart, use screen -r miner"
